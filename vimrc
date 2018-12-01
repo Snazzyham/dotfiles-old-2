@@ -111,7 +111,7 @@ endif
 set splitright
 set splitbelow
 
-colorscheme bvemu
+colorscheme dim
 let g:airline_theme='minimalist'
 set background=dark
 
@@ -133,7 +133,7 @@ au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
     \}
 " NEOVIM ONLY STUFF  
 if has('nvim')
-  colorscheme bvemu
+  colorscheme dim
   " enable deoplete to auto complete on startup  
   let g:deoplete#enable_at_startup = 1  
   :set omnifunc=htmlcomplete0CompleteTags
