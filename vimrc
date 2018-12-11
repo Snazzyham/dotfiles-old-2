@@ -3,36 +3,27 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'luochen1990/rainbow'
+Plugin 'Yggdroot/indentLine'
 Plugin 'alvan/vim-closetag'
-Plugin 'mhinz/vim-mix-format'
 Plugin 'fatih/vim-go'
 Plugin 'Canop/patine'
-Plugin 'tpope/vim-db'
 Plugin 'yuttie/inkstained-vim'
 Plugin 'chemzqm/vim-jsx-improve'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tomasiser/vim-code-dark'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmhedberg/matchit'
 Plugin 'Snazzyham/split-term.vim'
 Plugin 'epilande/vim-react-snippets'
-Plugin 'rizzatti/dash.vim'
-Plugin 'charlespeters/vim-ganymede'
-Plugin 'trevordmiller/nova-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'mxw/vim-jsx'
 Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'godlygeek/tabular'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'Shougo/deoplete.nvim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'styled-components/vim-styled-components'
@@ -40,11 +31,12 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'sbdchd/neoformat'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'posva/vim-vue'
-Plugin 'ap/vim-css-color'
 Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
+set ttyfast
+set lazyredraw
 inoremap " ""<ESC>ha
 inoremap { {}<ESC>ha
 inoremap ( ()<ESC>ha
@@ -69,33 +61,10 @@ syntax on
 :set cursorline
 "set autoindent
 set smartindent
-autocmd BufNewFile *.html ks|call HTMLHeader()|'s
 
-" html preload 
-fun HTMLHeader() 
-    call append(0, "<!DOCTYPE html>")
-    call append(1, "<html lang='en'>")
-    call append(2, "  <head>")
-    call append(3, "    <meta charset='utf-8'>")
-    call append(4, "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>")
-    call append(5, "    <meta name='viewport' content='width=device-width, initial-scale=1'>")
-    call append(6, "    <title></title>")
-    call append(7, "    <link rel='stylesheet' href='bundle.css'>")
-    call append(8, "  </head>")
-    call append(9, "  <body>")
-    call append(10, " </body>")
-    call append(11, "</html>")
-endfun
 
 " emmet key to <c-A> rather than C-Y
 let g:user_emmet_leader_key='<C-A>'
-
-
-" map NERDTree to Control M 
-:nnoremap <C-m> :NERDTreeToggle<CR>
-
-" open all md files as markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " use alt+j and alt+k to move lines up or down 
 nnoremap ∆ :m .+1<CR>==
@@ -124,12 +93,10 @@ set splitright
 set splitbelow
 
 " COLORSCHEMES
-colorscheme codedark
+colorscheme dim
 let g:airline_theme='minimalist'
 set background=dark
 
-" Open all .hbs as handlebars 
-au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
 
 
 " SET Neoformat on save 
@@ -148,14 +115,8 @@ let g:neoformat_enabled_elixir = ['mixformat']
 
 " NEOVIM ONLY STUFF  
 if has('nvim')
-  colorscheme palx
+  colorscheme zenburn
   let g:airline_theme='base16'
-  " enable deoplete to auto complete on startup  
-  let g:deoplete#enable_at_startup = 1  
-  :set omnifunc=htmlcomplete0CompleteTags
-  :set omnifunc=csscomplete#CompleteCSS
-  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-
   " enable ultisnips for neovim 
   let g:UltiSnipsExpandTrigger="<tab>"
   let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -167,7 +128,6 @@ if has('nvim')
       \  },
     \}
   
-  set termguicolors
 endif
 
 if !has ('nvim')
@@ -190,4 +150,9 @@ let g:ctrlp_custom_ignore = 'node_modules'
 " Auto Close tags JSX
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
+" Change indent char
+let g:indentLine_char = '┆'
+set list lcs=tab:\|\ 
 
+" Activate Rainbow for matching parens
+let g:rainbow_active = 1

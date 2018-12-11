@@ -17,6 +17,8 @@ export PATH=/Users/soham/.nvm/versions/node/v8.2.1/bin:/usr/local/bin:/usr/bin:/
 
 # Initialize Z 
 . $HOME/z/z.sh
+
+
 # Colors
 export CLICOLOR=1
 autoload colors; colors;
@@ -69,7 +71,12 @@ alias grg="git remote get-url origin"
 alias grs="git remote set-url origin "
 alias slack="node ~/Documents/github/terminal-slack/main.js"
 alias tks="tmux kill-session -t"
+alias tas="tmux attach-session -t"
+alias gettach="wget https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css"
+alias bmadmin="mosh soham@104.248.149.245"
 export NVM_DIR="/Users/soham/.nvm"
+
+
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export NVIM_TUI_ENABLE_CURSOR_SHAPE=1            # this sets cursor shapes in nvim
