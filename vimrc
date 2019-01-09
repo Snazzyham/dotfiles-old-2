@@ -58,7 +58,7 @@ set nobackup
 set noswapfile
 set mouse=a
 syntax on
-:set cursorline
+":set cursorline
 "set autoindent
 set smartindent
 

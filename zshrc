@@ -27,7 +27,8 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 # Example aliases
 alias posts='cd ~/Documents/github/snazzyham.com/snazzyham.github.io/_posts'     						# go to dropbox code folder
 alias vplug='vim +PluginInstall +qall'
-
+alias n='nnn'
+alias q="qlmanage -p"
 alias gd="cd Google\ Drive\ File\ Stream/My\ Drive"
 
 alias sites='cd ~/Dropbox/Documents/websites'     					                                # go to websites folder
@@ -65,7 +66,7 @@ alias cloudera="docker run --hostname=quickstart.cloudera --privileged=true -p 8
 alias fijiaws="ssh -i ~/.ssh/gs_fiji_ec2_cert.pem ubuntu@ec2-52-76-182-97.ap-southeast-1.compute.amazonaws.com"
 alias noraws="ssh -i ~/.ssh/gs_fiji_ec2_cert.pem ubuntu@ec2-13-251-75-244.ap-southeast-1.compute.amazonaws.com"
 alias gsroot="ssh root@128.199.245.38"
-alias gsadmin="ssh admin@128.199.245.38"
+alias gsadmin="mosh admin@128.199.245.38"
 alias dwserver="ssh root@172.104.171.77"
 alias grg="git remote get-url origin"
 alias grs="git remote set-url origin "
