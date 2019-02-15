@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/sohamadwani/dotfiles/vim/bundle/vim-react-snippets/snippets'
-let g:netrw_dirhist_2='/Users/soham/Documents/github/label-data-view'
-let g:netrw_dirhist_3='/Users/soham/Documents/github/label-data-view/components'
-let g:netrw_dirhist_4='/Users/soham/dotfiles'
-let g:netrw_dirhist_5='/Users/soham/Documents/github/tmpform'
-let g:netrw_dirhist_6='/Users/soham/Documents/github/eurokars/pages/owners'
-let g:netrw_dirhist_7='/Users/soham/dotfiles'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/soham/dotfiles/vim/UltiSnips'
+let g:netrw_dirhist_2='/usr/local/etc/nginx/servers'
+let g:netrw_dirhist_3='/Users/soham/Documents/github/eurokars/styles'
