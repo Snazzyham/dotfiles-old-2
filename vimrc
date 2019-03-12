@@ -3,19 +3,16 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'logico-dev/typewriter'
 Plugin 'luochen1990/rainbow'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'Yggdroot/indentLine'
 Plugin 'alvan/vim-closetag'
 Plugin 'fatih/vim-go'
-Plugin 'Canop/patine'
-Plugin 'yuttie/inkstained-vim'
 Plugin 'chemzqm/vim-jsx-improve'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmhedberg/matchit'
-Plugin 'Snazzyham/split-term.vim'
 Plugin 'epilande/vim-react-snippets'
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/html5.vim'
@@ -28,11 +25,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'styled-components/vim-styled-components'
-Plugin 'elixir-lang/vim-elixir'
 Plugin 'sbdchd/neoformat'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'posva/vim-vue'
-Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
@@ -114,8 +109,8 @@ let g:neoformat_enabled_elixir = ['mixformat']
 
 " NEOVIM ONLY STUFF  
 if has('nvim')
-  colorscheme zenburn
-  let g:airline_theme='base16'
+  colorscheme mac_classic
+  let g:airline_theme='minimalist'
   " enable ultisnips for neovim 
   let g:UltiSnipsExpandTrigger="<tab>"
   let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -155,3 +150,6 @@ set list lcs=tab:\|\
 
 " Activate Rainbow for matching parens
 let g:rainbow_active = 1
+
+"inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
