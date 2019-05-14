@@ -7,6 +7,8 @@
 # Change default zim location
 export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 
+# export locale for Mosh
+export LC_ALL="en_US.UTF-8"
 # Start zim
 [[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
 
@@ -34,6 +36,7 @@ alias gd="cd Google\ Drive\ File\ Stream/My\ Drive"
 alias sites='cd ~/Dropbox/Documents/websites'     					                                # go to websites folder
 alias gt='cd ~/Documents/github'     								                                        # go to github folder
 alias chrome='open -a "Google Chrome"'     							                                    # open with chrome
+alias mvim='open -a "MacVim"'     							                                            # open with MacVim
 alias vr='open -a "VimR"'     							                                                # open with VimR
 alias saf='open -a "Safari"'     							                                              # open with safari
 alias sublime='open -a "Sublime Text"'     							                                    # open with sublime

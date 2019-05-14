@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/soham/dotfiles'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/stacke/frontend/src'
+let g:netrw_dirhist_2='/Users/soham/Documents/github/GOODSTUPH/bigpool/languages'
+let g:netrw_dirhist_3='/Users/soham/Documents/github/GOODSTUPH/bigpool/languages/en-gb'
+let g:netrw_dirhist_4='/Users/soham/Documents/github/GOODSTUPH/bigpool/styles'
+let g:netrw_dirhist_5='/Users/soham/Documents/github/GOODSTUPH/bigpool/static'
+let g:netrw_dirhist_6='/Users/soham/Documents/github/GOODSTUPH/eurokars/components/contactForms'
+let g:netrw_dirhist_7='/Users/soham/Documents/github/GOODSTUPH/bigpool/layouts'

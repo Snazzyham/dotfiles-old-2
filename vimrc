@@ -152,4 +152,4 @@ set list lcs=tab:\|\
 let g:rainbow_active = 1
 
 "inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
-nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+nnoremap <Space><Space> <Esc>/_++_<Enter>"_c4l
