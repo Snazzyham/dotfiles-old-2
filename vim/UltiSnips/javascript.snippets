@@ -43,6 +43,19 @@ class ${1} extends Component {
 export default $1
 endsnippet
 
+snippet stckpoint "stack new endpoint"
+fastify.post("${1}", async (req, res) => {
+  let token = req.headers["x-access-token"];
+  let v = await _tokenHandler(token);
+
+  if (!v.auth) {
+    res.send(v);
+  } else {
+
+    }
+});
+endsnippet
+
 snippet req "require node"
 const ${1} = require("$1");
 endsnippet
