@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'fatih/vim-go'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'alvan/vim-closetag'
 Plugin 'mhinz/vim-mix-format'
 Plugin 'Canop/patine'
@@ -48,8 +49,8 @@ call vundle#end()
 filetype plugin indent on
 
 inoremap " ""<ESC>ha
-inoremap { {}<ESC>ha
-inoremap ( ()<ESC>ha
+"inoremap { {}<ESC>ha
+"inoremap ( ()<ESC>ha
 set clipboard=unnamed
 set tabstop=2           " tab spacing
 set softtabstop=2       " unify tab spacing
