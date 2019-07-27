@@ -85,3 +85,9 @@ export NVM_DIR="/Users/soham/.nvm"
 
 export NVIM_TUI_ENABLE_CURSOR_SHAPE=1            # this sets cursor shapes in nvim
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/soham/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/soham/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/soham/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/soham/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
