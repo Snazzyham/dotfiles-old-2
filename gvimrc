@@ -31,7 +31,7 @@ Plugin 'posva/vim-vue'
 call vundle#end()
 filetype plugin indent on
 
-set guifont=SF\ Mono:h18
+set guifont=Iosevka\ Term:h18
 set ttyfast
 set lazyredraw
 inoremap " ""<ESC>ha

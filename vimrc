@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'andreypopp/vim-colors-plain'
+Plugin 'jxnblk/vim-mdx-js'
 Plugin 'haishanh/night-owl.vim'
 Plugin 'logico-dev/typewriter'
 Plugin 'luochen1990/rainbow'
@@ -89,7 +90,7 @@ set splitright
 set splitbelow
 
 " COLORSCHEMES
-colorscheme plain
+colorscheme night-owl
 let g:airline_theme='minimalist'
 set background=dark
 
