@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/midtrans-test/src'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/test-new-gs-site/frontend'
+let g:netrw_dirhist_2='/Users/soham/Documents/github/GOODSTUPH/test-new-gs-site/frontend/components'
+let g:netrw_dirhist_3='/Users/soham/Documents/github/GOODSTUPH/mg-eurokars/src/components'
+let g:netrw_dirhist_4='/Users/soham/Documents/github/GOODSTUPH/mg-eurokars/src/static'
+let g:netrw_dirhist_5='/Users/soham/Documents/github/GOODSTUPH/westworld-microsite/test-front/public'
+let g:netrw_dirhist_6='/Users/soham/Documents/github/GOODSTUPH/westworld-microsite/test-front/build'

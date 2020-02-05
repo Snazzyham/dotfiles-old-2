@@ -5,13 +5,16 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'andreypopp/vim-colors-plain'
 Plugin 'jxnblk/vim-mdx-js'
-Plugin 'haishanh/night-owl.vim'
 Plugin 'logico-dev/typewriter'
 Plugin 'luochen1990/rainbow'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'alvan/vim-closetag'
 Plugin 'fatih/vim-go'
-Plugin 'chemzqm/vim-jsx-improve'
+"Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'elzr/vim-json'
+Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'jparise/vim-graphql'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline-themes'
@@ -30,7 +33,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'sbdchd/neoformat'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'posva/vim-vue'
+Plugin 'mhinz/vim-signify'
 call vundle#end()
 filetype plugin indent on
 
@@ -90,7 +93,7 @@ set splitright
 set splitbelow
 
 " COLORSCHEMES
-colorscheme night-owl
+colorscheme vim-monokai-tasty
 let g:airline_theme='minimalist'
 set background=dark
 
@@ -107,6 +110,7 @@ let g:mix_format_on_save = 1
 
 " NEOFORMAT CONFIG
 let g:neoformat_enabled_javascript = ['prettier']
+let g:neoformat_enabled_html = ['prettier']
 let g:neoformat_enabled_vue = ['prettier']
 let g:neoformat_enabled_elixir = ['mixformat']
 

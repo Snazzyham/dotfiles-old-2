@@ -40,10 +40,6 @@ shift + alt - 4 : chunkc tiling::window --send-to-desktop 4
 shift + alt - 5 : chunkc tiling::window --send-to-desktop 5
 shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
 
-# move focused window to monitor 
-#shift + alt - ; : chunkc tiling::window --send-to-monitor prev
-#shift + alt - ' : chunkc tiling::window --send-to-monitor next
-
 shift + alt - right : chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge west;  chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge east
 shift + alt - down : chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge north; chunkc tiling::window --use-temporary-ratio -0.05 --adjust-window-edge south
 shift + alt - up : chunkc tiling::window --use-temporary-ratio  0.05 --adjust-window-edge north; chunkc tiling::window --use-temporary-ratio  0.05 --adjust-window-edge south
