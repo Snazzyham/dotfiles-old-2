@@ -68,7 +68,6 @@ alias cloudera="docker run --hostname=quickstart.cloudera --privileged=true -p 8
 
 alias fijiaws="ssh -i ~/.ssh/gs_fiji_ec2_cert.pem ubuntu@ec2-52-76-182-97.ap-southeast-1.compute.amazonaws.com"
 alias noraws="ssh -i ~/.ssh/gs_fiji_ec2_cert.pem ubuntu@ec2-13-251-75-244.ap-southeast-1.compute.amazonaws.com"
-alias wwstaging="ssh soham@35.240.146.245"
 alias gsroot="ssh root@128.199.245.38"
 alias gsadmin="mosh admin@128.199.245.38"
 alias dwserver="ssh root@172.104.171.77"
@@ -78,9 +77,19 @@ alias slack="node ~/Documents/github/terminal-slack/main.js"
 alias tks="tmux kill-session -t"
 alias tas="tmux attach-session -t"
 alias gettach="wget https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css"
+export NVM_DIR="/Users/soham/.nvm"
+
+# westworld shit 
+alias wwstaging="ssh soham@35.240.146.245"
+alias ww8="ssh soham@34.87.117.165"
+alias ww9="ssh soham@34.74.182.131"
+alias ww10="ssh soham@34.92.27.80"
+alias ww11="ssh soham@35.197.160.86"
+
+# eurokars
+alias mgstaging="ssh root@157.230.43.217"
 alias bmadmin="mosh soham@104.248.149.245"
 alias bmstaging="mosh soham@159.65.4.158"
-export NVM_DIR="/Users/soham/.nvm"
 
 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'andreypopp/vim-colors-plain'
 Plugin 'jxnblk/vim-mdx-js'
 Plugin 'logico-dev/typewriter'
+Plugin 'trusktr/seti.vim'
 Plugin 'luochen1990/rainbow'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'alvan/vim-closetag'
@@ -93,7 +94,7 @@ set splitright
 set splitbelow
 
 " COLORSCHEMES
-colorscheme vim-monokai-tasty
+colorscheme seti
 let g:airline_theme='minimalist'
 set background=dark
 
