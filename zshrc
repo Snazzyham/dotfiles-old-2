@@ -27,7 +27,7 @@ autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # Example aliases
-alias vplug='vim +PluginInstall +qall'
+alias vplug='vim +PlugInstall +qall'
 alias n='nnn'
 alias q="qlmanage -p"
 alias gd="cd Google\ Drive\ File\ Stream/My\ Drive"

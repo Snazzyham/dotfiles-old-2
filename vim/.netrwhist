@@ -1,6 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/porsche_onepager/src/static'
+let g:netrw_dirhistcnt =2
 let g:netrw_dirhist_2='/Users/soham/dotfiles'
-let g:netrw_dirhist_3='/usr/local/etc/nginx/servers'
-let g:netrw_dirhist_4='/Users/soham/dotfiles'
+let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/mg-eurokars/src/pages/contact'

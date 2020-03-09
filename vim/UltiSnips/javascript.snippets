@@ -1,30 +1,47 @@
-snippet ims "description"
-import styled from 'styled-components'
-endsnippet	
-
 snippet imr
-import React from "react"
+import React from "react";
+endsnippet
+
+snippet imra
+import React, { useState, useEffect } from "react";
+endsnippet
+
+snippet imrc "import react component" 
+import {Component} from 'react'
+endsnippet
+
+snippet imf "import from"
+import ${1} from "${2}";
+endsnippet
+
+snippet imfc "import from curls"
+import { ${1} } from "${2}";
 endsnippet
 
 snippet ts
 this.state.
 endsnippet
 
-snippet imn "description"
-import styled from 'styled-components/native'
-endsnippet
 
 snippet sl "stateless functional component"
-const ${1} = (props) => (
-	${2}
-);
+const ${1} = (props) => {
+	return (
+		${2}
+	);
+};
 endsnippet
 
-snippet imt "import tachyons components"
-import styled from 'tachyons-components';
-endsnippet 
-snippet imrc "import react component" 
-import {Component} from 'react'
+snippet sla "stateless with useeffect" b
+const ${1} = (props) => {
+	
+	useEffect(() => {
+		${2}
+	}, []);
+
+	return (
+		${3:<div></div>}
+	);
+};
 endsnippet
 
 snippet cls "create react class"
