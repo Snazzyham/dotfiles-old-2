@@ -73,6 +73,12 @@ fastify.post("${1}", async (req, res) => {
 });
 endsnippet
 
+snippet fstpost "Fastify Post Endpoint"
+fastify.post("/${1:Endpoint}", async (request, reply) => {
+	let { ${2:data} } = request.body;
+});
+endsnippet
+
 snippet req "require node"
 const ${1} = require("$1");
 endsnippet

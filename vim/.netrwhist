@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/soham/dotfiles'
+let g:netrw_dirhist_9='/usr/local/etc/nginx'
+let g:netrw_dirhist_8='/usr/local/etc/nginx/servers'
+let g:netrw_dirhist_7='/Users/soham/dotfiles/vim/UltiSnips'
+let g:netrw_dirhist_6='/Users/soham/dotfiles/vim'
+let g:netrw_dirhist_5='/Users/soham/dotfiles'
+let g:netrw_dirhist_4='/Users/soham/dotfiles/vim/UltiSnips'
+let g:netrw_dirhist_3='/Users/soham/dotfiles/vim'
 let g:netrw_dirhist_2='/Users/soham/dotfiles'
 let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/mg-eurokars/src/pages/contact'

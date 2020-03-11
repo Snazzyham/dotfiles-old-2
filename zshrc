@@ -65,11 +65,9 @@ alias tas="tmux attach-session -t"
 alias gettach="wget https://raw.githubusercontent.com/tachyons-css/tachyons/master/css/tachyons.min.css"
 
 # westworld shit 
-alias wwstaging="ssh soham@35.240.146.245"
-alias ww8="ssh soham@34.87.117.165"
-alias ww9="ssh soham@34.74.182.131"
-alias ww10="ssh soham@34.92.27.80"
-alias ww11="ssh soham@35.197.160.86"
+alias ww1="ssh soham@34.64.103.232"
+alias ww2="ssh soham@34.64.186.120"
+alias ww3="ssh soham@34.34.64.80.122"
 
 # eurokars
 alias mgstaging="ssh root@157.230.43.217"
