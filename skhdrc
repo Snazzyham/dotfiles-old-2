@@ -56,6 +56,13 @@ cmd + shift - e : yabai -m space --focus next
 #cmd + alt - 8 : yabai -m space --focus 8
 #cmd + alt - 9 : yabai -m space --focus 9
 #cmd + alt - 0 : yabai -m space --focus 10
+#
+
+
+# focus display
+
+cmd + shift - a : yabai -m display --focus prev
+cmd + shift - s : yabai -m display --focus next
 
 # send window to desktop and follow focus
 shift + alt - m : yabai -m window --space recent; yabai -m space --focus recent

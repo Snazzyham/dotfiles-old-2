@@ -1,6 +1,7 @@
 set nocompatible 
 
 call plug#begin("~/.vim/bundle")
+Plug 'gabrielelana/vim-markdown'
 Plug 'andreypopp/vim-colors-plain'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'logico-dev/typewriter'
@@ -89,7 +90,7 @@ set splitright
 set splitbelow
 
 " COLORSCHEMES
-colorscheme seti
+colorscheme codedark
 let g:airline_theme='minimalist'
 set background=dark
 
@@ -148,8 +149,8 @@ let g:ctrlp_custom_ignore = 'node_modules'
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 
 " Change indent char
-let g:indentLine_char = '┆'
-set list lcs=tab:\|\ 
+"let g:indentLine_char = '┆'
+"set list lcs=tab:\|\ 
 
 " Activate Rainbow for matching parens
 let g:rainbow_active = 1
