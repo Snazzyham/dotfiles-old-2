@@ -127,10 +127,10 @@ bindkey -M vicmd 'j' history-substring-search-down
 #
 # User configuration sourced by interactive shells
 #
-
-
 # export locale for Mosh
 export LC_ALL="en_US.UTF-8"
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
 
 export GOPATH=$HOME/go
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH:$GOPATH/bin:/Users/soham/platform-tools
