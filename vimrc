@@ -5,6 +5,9 @@ Plug 'gabrielelana/vim-markdown'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'andreypopp/vim-colors-plain'
 Plug 'jxnblk/vim-mdx-js'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 Plug 'logico-dev/typewriter'
 Plug 'trusktr/seti.vim'
 Plug 'luochen1990/rainbow'
@@ -91,9 +94,9 @@ set splitright
 set splitbelow
 
 " COLORSCHEMES
-colorscheme codedark
-let g:airline_theme='minimalist'
 set background=dark
+colorscheme ThemerVim
+let g:airline_theme='minimalist'
 
 
 
