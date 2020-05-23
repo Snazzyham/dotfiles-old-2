@@ -8,8 +8,6 @@ Plug 'jxnblk/vim-mdx-js'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-Plug 'logico-dev/typewriter'
-Plug 'trusktr/seti.vim'
 Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
@@ -67,13 +65,14 @@ set smartindent
 " emmet key to <c-A> rather than C-Y
 let g:user_emmet_leader_key='<C-A>'
 
-" use alt+j and alt+k to move lines up or down 
-nnoremap ∆ :m .+1<CR>==
-nnoremap ˚ :m .-2<CR>==
-inoremap ∆ <Esc>:m .+1<CR>==gi
-inoremap ˚ <Esc>:m .-2<CR>==gi
-vnoremap ∆ :m '>+1<CR>gv=gv
-vnoremap ˚ :m '<-2<CR>gv=gv
+" use alt+j and alt+k to move lines up or down (removed because of current
+" yabai setup)
+"nnoremap ∆ :m .+1<CR>==
+"nnoremap ˚ :m .-2<CR>==
+"inoremap ∆ <Esc>:m .+1<CR>==gi
+"inoremap ˚ <Esc>:m .-2<CR>==gi
+"vnoremap ∆ :m '>+1<CR>gv=gv
+"vnoremap ˚ :m '<-2<CR>gv=gv
 " Change cursor shape between insert and normal mode in iTerm2.app
 " AND WHILE USING TMUX
 if $TERM_PROGRAM =~ "iTerm"
