@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/soham/Documents/github/GOODSTUPH/mg-eurokars/src/pages/contact'
 let g:netrw_dirhist_5='/Users/soham/Documents/github/GOODSTUPH/stacke/backend/helpers'
 let g:netrw_dirhist_4='/Users/soham/Documents/github/GOODSTUPH/dpg-sunset'
 let g:netrw_dirhist_3='/Users/soham/Documents/github/GOODSTUPH/spatulah/frontend/src/pages'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/Users/soham/dotfiles'
 let g:netrw_dirhist_9='/Users/soham/dotfiles/vim/colors'
 let g:netrw_dirhist_8='/Users/soham/dotfiles/vim'
 let g:netrw_dirhist_7='/Users/soham/dotfiles/vim/colors'
-let g:netrw_dirhist_6='/Users/soham/dotfiles/vim'

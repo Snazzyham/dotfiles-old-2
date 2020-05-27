@@ -6,6 +6,7 @@ files="vimrc vim zshrc tmux.conf zimrc yabairc skhdrc alacritty.yml z zim zlogin
 ##########
 
 echo "Make sure you have run your brewfile first"
+echo "also don't forget to download clipy https://clipy-app.com"
 read -p "Do you want to continue" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
