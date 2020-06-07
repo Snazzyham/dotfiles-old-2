@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/soham/Documents/github/GOODSTUPH/stacke/go-backend/handlers'
 let g:netrw_dirhist_8='/Users/soham/Documents/github/GOODSTUPH/gs18'
 let g:netrw_dirhist_7='/Users/soham/Documents/github/GOODSTUPH/gs18/storage'
 let g:netrw_dirhist_6='/Users/soham/Documents/github/GOODSTUPH/gs18/storage/framework'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_3='/Users/soham/Documents/github/GOODSTUPH/gs18/storage/fram
 let g:netrw_dirhist_2='/Users/soham/Documents/github/GOODSTUPH/gs18/storage/framework'
 let g:netrw_dirhist_1='/Users/soham/Documents/github/GOODSTUPH/gs18/storage/framework/views'
 let g:netrw_dirhist_0='/Users/soham/Documents/github/GOODSTUPH/gs18/storage/framework'
-let g:netrw_dirhist_9='/Users/soham/Documents/github/GOODSTUPH/lostjob/helpers'

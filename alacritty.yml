@@ -207,9 +207,53 @@ schemes:
       magenta: "#875B92"
       cyan: "#0E9783"
       white: "#bfc0c2"
-# Colors (Github Universe)
+
+  themer-light: &light
+    primary:
+      background: "#edecf0"
+      foreground: "#434344"
+
+    cursor:
+      text: "#edecf0"
+      cursor: "#953d96"
+
+    selection:
+      text: "#edecf0"
+      background: "#0d8743"
+
+    normal:
+      black: "#434344"
+      red: "#e0383e"
+      green: "#4e9538"
+      yellow: "#a06f37"
+      blue: "#0d8743"
+      magenta: "#3260ab"
+      cyan: "#0b8377"
+      white: "#b4b4b7"
+
+    bright:
+      black: "#605f60"
+      red: "#E35C62"
+      green: "#6EA65D"
+      yellow: "#AF885C"
+      blue: "#3A9B66"
+      magenta: "#577CB9"
+      cyan: "#38988F"
+      white: "#d1d0d3"
+
+    dim:
+      black: "#272727"
+      red: "#BB3539"
+      green: "#467F35"
+      yellow: "#886134"
+      blue: "#12743D"
+      magenta: "#305591"
+      cyan: "#117167"
+      white: "#98989a"
+
+# Colors (Soham's Universe)
 colors:
-  *dark
+  *light
   # Bright and dim foreground colors
   #
   # The dimmed foreground color is calculated automatically if it is not present.
