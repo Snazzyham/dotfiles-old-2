@@ -2,6 +2,7 @@ set nocompatible
 
 call plug#begin("~/.vim/bundle")
 Plug 'gabrielelana/vim-markdown'
+Plug 'pantharshit00/vim-prisma'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'andreypopp/vim-colors-plain'
 Plug 'jxnblk/vim-mdx-js'
@@ -31,9 +32,9 @@ Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'styled-components/vim-styled-components'
-Plug 'sbdchd/neoformat'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-signify'
+Plug 'prettier/vim-prettier'
 call plug#end()
 
 set ttyfast
@@ -98,22 +99,13 @@ colorscheme ThemerVim
 let g:airline_theme='minimalist'
 
 
-
-" SET Neoformat on save 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * Neoformat
-augroup END
-
 " SET Elixir Mix Format on Save
 let g:mix_format_on_save = 1
 
-" NEOFORMAT CONFIG
-let g:neoformat_enabled_javascript = ['prettier']
-let g:neoformat_enabled_html = ['prettier']
-let g:neoformat_enabled_vue = ['prettier']
-let g:neoformat_enabled_elixir = ['mixformat']
+" PRETTIER format on save
+let g:prettier#autoformat_require_pragma = 0
 
+autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.html Prettier
 " NEOVIM ONLY STUFF  
 if has('nvim')
   colorscheme mac_classic
