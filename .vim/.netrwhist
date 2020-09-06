@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/soham/Downloads/Firefox Add-on/Themer Dark'
+let g:netrw_dirhist_7='/home/soham/Downloads/Firefox Add-on'
+let g:netrw_dirhist_6='/home/soham/.config'
+let g:netrw_dirhist_5='/home/soham/Downloads/Firefox Add-on/Themer Dark'
+let g:netrw_dirhist_4='/home/soham/Downloads/Firefox Add-on'
+let g:netrw_dirhist_3='/home/soham/.config/fish/conf.d'
+let g:netrw_dirhist_2='/home/soham/Documents/github/fiber-test/build'
+let g:netrw_dirhist_1='/home/soham/.config/fish/fish'
+let g:netrw_dirhist_0='/home/soham/.config/fish'
+let g:netrw_dirhist_9='/Users/soham/Documents/github/GOODSTUPH/stacke/go-backend/handlers'

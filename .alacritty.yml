@@ -1,0 +1,135 @@
+colors:
+  bright:
+    black: "#636666"
+    blue: "#6BA6C0"
+    cyan: "#87A1AD"
+    green: "#9BC565"
+    magenta: "#EE6D95"
+    red: "#CE5D61"
+    white: "#d4d7d6"
+    yellow: "#CDCD5F"
+  cursor:
+    cursor: "#a074c4"
+    text: "#0e1112"
+  dim:
+    black: "#2a2d2e"
+    blue: "#447F98"
+    cyan: "#607A86"
+    green: "#749E3E"
+    magenta: "#C7466E"
+    red: "#A6353A"
+    white: "#9b9e9e"
+    yellow: "#A5A638"
+  normal:
+    black: "#474a4a"
+    blue: "#519aba"
+    cyan: "#7494a3"
+    green: "#8dc149"
+    magenta: "#f55385"
+    red: "#cc3e44"
+    white: "#b8bbba"
+    yellow: "#cbcb41"
+  primary:
+    background: "#0e1112"
+    foreground: "#b8bbba"
+  selection:
+    background: "#519aba"
+    text: "#0e1112"
+cursor:
+  style: Block
+draw_bold_text_with_bright_colors: true
+font:
+  bold:
+    family: 'JetBrains Mono'
+    style: Regular
+  normal:
+    family: 'JetBrains Mono'
+    style: Regular
+  size: 12.0
+schemes:
+  themer-dark:
+    bright:
+      black: "#636666"
+      blue: "#6BA6C0"
+      cyan: "#87A1AD"
+      green: "#9BC565"
+      magenta: "#EE6D95"
+      red: "#CE5D61"
+      white: "#d4d7d6"
+      yellow: "#CDCD5F"
+    cursor:
+      cursor: "#a074c4"
+      text: "#0e1112"
+    dim:
+      black: "#2a2d2e"
+      blue: "#447F98"
+      cyan: "#607A86"
+      green: "#749E3E"
+      magenta: "#C7466E"
+      red: "#A6353A"
+      white: "#9b9e9e"
+      yellow: "#A5A638"
+    normal:
+      black: "#474a4a"
+      blue: "#519aba"
+      cyan: "#7494a3"
+      green: "#8dc149"
+      magenta: "#f55385"
+      red: "#cc3e44"
+      white: "#b8bbba"
+      yellow: "#cbcb41"
+    primary:
+      background: "#0e1112"
+      foreground: "#b8bbba"
+    selection:
+      background: "#519aba"
+      text: "#0e1112"
+  themer-light:
+    bright:
+      black: "#605f60"
+      blue: "#3A9B66"
+      cyan: "#38988F"
+      green: "#6EA65D"
+      magenta: "#577CB9"
+      red: "#E35C62"
+      white: "#d1d0d3"
+      yellow: "#AF885C"
+    cursor:
+      cursor: "#953d96"
+      text: "#edecf0"
+    dim:
+      black: "#272727"
+      blue: "#12743D"
+      cyan: "#117167"
+      green: "#467F35"
+      magenta: "#305591"
+      red: "#BB3539"
+      white: "#98989a"
+      yellow: "#886134"
+    normal:
+      black: "#434344"
+      blue: "#0d8743"
+      cyan: "#0b8377"
+      green: "#4e9538"
+      magenta: "#3260ab"
+      red: "#e0383e"
+      white: "#b4b4b7"
+      yellow: "#a06f37"
+    primary:
+      background: "#edecf0"
+      foreground: "#434344"
+    selection:
+      background: "#0d8743"
+      text: "#edecf0"
+shell:
+  args:
+    - --login
+    - --init-command
+    - 'tmux attach || tmux new'
+  program: /usr/bin/fish
+window:
+  decorations: full
+  padding:
+    x: 12
+    y: 12
+  startup_mode: Maximized

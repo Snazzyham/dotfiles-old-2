@@ -1,0 +1,13 @@
+pavucontrol
+i3-alternating-layout
+firefox
+tmux
+rofi
+pulseaudio-bluetooth
+ripgrep
+gtop
+fish
+flameshot
+alacritty
+cloudlflared-bin
+
