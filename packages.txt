@@ -1,5 +1,4 @@
 pavucontrol
-i3-alternating-layout
 firefox
 tmux
 rofi
@@ -10,4 +9,4 @@ fish
 flameshot
 alacritty
 cloudlflared-bin
-
+sxiv

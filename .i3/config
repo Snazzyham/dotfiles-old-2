@@ -37,7 +37,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+q kill
 
 # i3 alternating tiles
-exec --no-startup-id /home/soham/i3-alternating-layout/alternating_layouts.py
+exec --no-startup-id /home/soham/.config/altlayouts.py
 
 # start program launcher
 bindsym $mod+space exec --no-startup-id rofi -show run -lines 10 -font "Inter 12" 
