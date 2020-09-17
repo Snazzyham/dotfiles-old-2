@@ -12,3 +12,5 @@ cloudlflared-bin
 sxiv
 peek
 i3blocks
+pywalfox
+clipit
