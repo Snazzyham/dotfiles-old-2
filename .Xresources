@@ -6,77 +6,32 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-XTerm*background:        rgb:e/11/12
-XTerm*foreground:        rgb:b8/bb/ba
 XTerm*pointerColor:      #1ABB9B
 XTerm*faceName:          Fixed
 XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-*background: rgb:e/11/12
-*foreground: rgb:b8/bb/ba
 *fading:                          8
 *fadeColor:                       black
 *cursorColor:                     #1ABB9B
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
 
-! blacks
-*color0: rgb:47/4a/4a
-*color8: rgb:63/66/66
-
-! reds
-*color1: rgb:cc/3e/44
-*color9: rgb:ce/5d/61
-
-! greens
-*color2: rgb:8d/c1/49
-*color10: rgb:9b/c5/65
-
-! yellows
-*color3: rgb:cb/cb/41
-*color11: rgb:cd/cd/5f
-
-! blues
-*color4: rgb:51/9a/ba
-*color12: rgb:6b/a6/c0
-
-! magentas
-*color5: rgb:f5/53/85
-*color13: rgb:ee/6d/95
-
-! cyans
-*color6: rgb:74/94/a3
-*color14: rgb:87/a1/ad
-
-! whites
-*color7: rgb:b8/bb/ba
-*color15: rgb:d4/d7/d6
+Sxiv.background: #212121
 
 Xcursor.theme: Adwaita
 Xcursor.size:                     0
 
-URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
-
-! alternative font settings with 'terminus':
-! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
-!! terminus names see end of file!
+URxvt.font: xft:JetBrains Mono:style=Medium:size=12
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*background:                 black
-URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 
-! for 'fake' transparency (without Compton) uncomment the following three lines
-! URxvt*inheritPixmap:            true
-! URxvt*transparent:              true
-! URxvt*shading:                  138
+!colors imported below
 
 ! Normal copy-paste keybindings without perls
 URxvt.iso14755:                   false
@@ -218,19 +173,4 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt*tabbar-fg:                  colour
 ! URxvt*url-launcher:               string
 
-! The Terminus font uses the following X-names:
-! -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
-! -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
-! -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-! -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
-! -xos4-terminus-medium-r-normal--22-220-72-72-c-110-iso10646-1
-! -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
-! -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso10646-1
-! -xos4-terminus-medium-r-normal--32-320-72-72-c-160-iso10646-1
-! -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso10646-1
-! -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
-! -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
-! -xos4-terminus-bold-r-normal--20-200-72-72-c-100-iso10646-1
-! -xos4-terminus-bold-r-normal--24-240-72-72-c-120-iso10646-1
-! -xos4-terminus-bold-r-normal--28-280-72-72-c-140-iso10646-1
-! -xos4-terminus-bold-r-normal--32-320-72-72-c-160-iso10646-1
+#include "/home/soham/colors.Xdefaults"
