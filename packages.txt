@@ -2,7 +2,7 @@ pavucontrol
 firefox
 tmux
 rofi
-pulseaudio-bluetooth
+pulseaudio-git
 ripgrep
 gtop
 fish

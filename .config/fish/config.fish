@@ -2,6 +2,8 @@ set -x GOPATH $HOME/go
 
 set -x EDITOR "vim"
 
+set -x DEV_ENV "dev"
+
 set -x BROWSER "/usr/bin/firefox"
 
 set -x PATH  /usr/local/bin /usr/bin /bin /usr/sbin /sbin:$PATH 
@@ -32,6 +34,8 @@ alias ls='ls -a'
 alias l="ls -l"
 alias code="open -a 'Visual Studio Code'" 
 alias nginxconf="cd /usr/local/etc/nginx/"
+alias strd="sudo systemctl start docker.service"
+alias stpd="sudo systemctl stop docker.service"
 
 # git remote shortcuts
 alias grg="git remote get-url origin"
@@ -60,7 +64,11 @@ alias bmstaging="mosh soham@159.65.4.158"
 # GS Servers
 alias gsroot="ssh root@128.199.245.38"
 alias gsadmin="mosh admin@128.199.245.38"
+alias gs2="ssh soham@165.22.245.249"
 
 # Bigpool
 alias bp="ssh soham@34.92.69.85"
 
+
+# set colours from wal
+source ~/.cache/wal/colors.fish
