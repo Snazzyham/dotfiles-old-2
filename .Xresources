@@ -20,7 +20,7 @@ XTerm*selectToClipboard: true
 
 Sxiv.background: #212121
 
-Xcursor.theme: Adwaita
+Xcursor.theme: 
 Xcursor.size:                     0
 
 URxvt.font: xft:JetBrains Mono:style=Medium:size=12

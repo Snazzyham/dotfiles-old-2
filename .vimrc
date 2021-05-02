@@ -2,20 +2,19 @@ set nocompatible
 
 call plug#begin("~/.vim/bundle")
 Plug 'gabrielelana/vim-markdown'
+Plug 'amadeus/vim-mjml'
+Plug 'dylanaraps/wal.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'andreypopp/vim-colors-plain'
-Plug 'jxnblk/vim-mdx-js'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
+Plug 'prettier/vim-prettier'
 Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'elzr/vim-json'
-Plug 'jparise/vim-graphql'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tomasiser/vim-code-dark'
+Plug 'fatih/vim-go'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tmhedberg/matchit'
 Plug 'epilande/vim-react-snippets'
@@ -29,10 +28,12 @@ Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'styled-components/vim-styled-components'
-Plug 'sbdchd/neoformat'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-signify'
+" svelte
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'codechips/coc-svelte', {'do': 'npm install'}
+Plug 'jparise/vim-graphql'
 call plug#end()
 
 set ttyfast
@@ -57,12 +58,16 @@ set noswapfile
 set mouse=a
 syntax on
 ":set cursorline
-"set autoindent
 set smartindent
+set noautoindent
+filetype indent off
 
 
 " emmet key to <c-A> rather than C-Y
 let g:user_emmet_leader_key='<C-A>'
+
+" disable plugin indenting
+let g:typescript_indent_disable = 1
 
 " use alt+j and alt+k to move lines up or down (removed because of current
 " yabai setup)
@@ -93,25 +98,11 @@ set splitbelow
 
 " COLORSCHEMES
 set background=dark
-colorscheme seti2020
-let g:airline_theme='minimalist'
+colorscheme wal
+"let g:airline_theme='minimalist'
+highlight Pmenu ctermbg=black gui=bold
 
 
-
-" SET Neoformat on save 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * Neoformat
-augroup END
-
-" SET Elixir Mix Format on Save
-let g:mix_format_on_save = 1
-
-" NEOFORMAT CONFIG
-let g:neoformat_enabled_javascript = ['prettier']
-let g:neoformat_enabled_html = ['prettier']
-let g:neoformat_enabled_vue = ['prettier']
-let g:neoformat_enabled_elixir = ['mixformat']
 
 " NEOVIM ONLY STUFF  
 if has('nvim')
@@ -155,7 +146,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js"
 "set list lcs=tab:\|\ 
 
 " Activate Rainbow for matching parens
-let g:rainbow_active = 1
+let g:rainbow_active = 0
 
 "inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 nnoremap <Space><Space> <Esc>/_++_<Enter>"_c4l
@@ -313,3 +304,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " END COC CONFIG
+" vim prettier autoformat
+let g:prettier#autoformat = 0
+let g:prettier#autoformat_require_pragma = 0
+autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql,*.ts,*.jsx,*.html,*.svelte Prettier

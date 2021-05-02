@@ -6,7 +6,9 @@ set -x DEV_ENV "dev"
 
 set -x BROWSER "/usr/bin/firefox"
 
-set -x PATH  /usr/local/bin /usr/bin /bin /usr/sbin /sbin:$PATH 
+set -x PATH  /usr/local/bin /usr/bin /bin /usr/sbin /sbin:$PATH  $GOPATH/bin
+
+set -g -x TOGGL_KEY 876ab23b8a63c289ac64bd2c285dd6a3
 
 # Locales
 set -g -x  LC_ALL "en_US.UTF-8"  
@@ -36,6 +38,9 @@ alias code="open -a 'Visual Studio Code'"
 alias nginxconf="cd /usr/local/etc/nginx/"
 alias strd="sudo systemctl start docker.service"
 alias stpd="sudo systemctl stop docker.service"
+
+alias light="$HOME/theme_scripts/light.sh && source ~/.config/fish/config.fish"
+alias dark="$HOME/theme_scripts/dark.sh && source ~/.config/fish/config.fish"
 
 # git remote shortcuts
 alias grg="git remote get-url origin"
